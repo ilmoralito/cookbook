@@ -21,6 +21,10 @@ class Recipe {
         serve blank:false
         occasion inList:["hollyweek", "Christmas", "etc"]
         method blank:false
+<<<<<<< HEAD
+=======
+        enable blank:false
+>>>>>>> 7c6c894a6706b1cede74b993c8f81b291ffd1aab
     }
 
     static namedQueries = {

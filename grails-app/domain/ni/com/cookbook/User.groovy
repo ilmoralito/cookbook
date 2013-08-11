@@ -15,6 +15,10 @@ class User {
         fullName blank:false, maxSize:50
         password blank:false
         role inList:["admin", "user", "collaborator"]
+<<<<<<< HEAD
+=======
+        enable blank:false
+>>>>>>> 7c6c894a6706b1cede74b993c8f81b291ffd1aab
     }
 
     static namedQueries = {
