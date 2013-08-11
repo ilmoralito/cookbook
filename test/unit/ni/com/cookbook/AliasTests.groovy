@@ -1,0 +1,17 @@
+package ni.com.cookbook
+
+
+
+import grails.test.mixin.*
+import org.junit.*
+
+/**
+ * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
+ */
+@TestFor(Alias)
+class AliasTests {
+
+    void testSomething() {
+       fail "Implement me"
+    }
+}
