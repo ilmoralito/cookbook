@@ -28,4 +28,6 @@ class User {
     String toString() {
 
     }
+    
+    static hasMany = [recipe:Recipe]    
 }

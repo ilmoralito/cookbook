@@ -23,4 +23,6 @@ class Ingredient {
     String toString() {
 
     }
+
+    static belongsTo = [recipe:Recipe]
 }

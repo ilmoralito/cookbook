@@ -34,4 +34,7 @@ class Recipe {
     String toString() {
 
     }
+
+    static belongsTo = [user:User]
+    static hasMany = [alias:Alias, ingredient:Ingredient]
 }
