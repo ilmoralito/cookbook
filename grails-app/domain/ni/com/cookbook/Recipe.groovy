@@ -5,19 +5,19 @@ class Recipe {
     String name
     String type 
     byte[] image
-    Integer vote
+    Integer vote = 0
     String serve
     String occasion
     String method
     boolean enable
-	Date dateCReated
+	Date dateCreated
 	Date lastUpdated
 
     static constraints = {
         name blank:false, maxSize:70
         type inList:["food", "drink", "dessert", "sweet"]
-        image  blank:true, maxSize:250000
-        vote blank:true
+        image nullable:true, maxSize:250000
+        vote min:0
         serve blank:false
         occasion inList:["hollyweek", "Christmas", "etc"]
         method blank:false
@@ -36,5 +36,6 @@ class Recipe {
     }
 
     static belongsTo = [user:User]
-    static hasMany = [alias:Alias, ingredient:Ingredient]
+    static hasMany = [alias:String, ingredient:Ingredient]
+
 }

@@ -7,7 +7,7 @@ class User {
     String password
     String role 
     boolean enable 
-    Date dateCReated
+    Date dateCreated
 	Date lastUpdated
 
     static constraints = {
