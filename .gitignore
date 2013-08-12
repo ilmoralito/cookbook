@@ -38,6 +38,7 @@ stacktrace.log
 # general HSQL database files
 *Db.properties
 *Db.script
+*.db
 
 # logs
 /stacktrace.log
