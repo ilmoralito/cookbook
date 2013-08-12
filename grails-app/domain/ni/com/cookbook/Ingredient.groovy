@@ -4,7 +4,7 @@ class Ingredient {
 
     String mAndQ 
     String name
-    Date dateCReated
+    Date dateCreated
 	Date lastUpdated
 
     static constraints = {

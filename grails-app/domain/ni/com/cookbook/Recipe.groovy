@@ -6,8 +6,8 @@ class Recipe {
     String type 
     byte[] image
     Integer vote = 0
-    String serve
-    String occasion
+    Integer serve
+    String occation
     String method
     boolean enable
 	Date dateCreated
@@ -18,8 +18,8 @@ class Recipe {
         type inList:["food", "drink", "dessert", "sweet"]
         image nullable:true, maxSize:250000
         vote min:0
-        serve blank:false
-        occasion inList:["hollyweek", "Christmas", "etc"]
+        serve blank:false, min:1
+        occation inList:["hollyweek", "Christmas", "DayDead"]
         method blank:false
     }
 

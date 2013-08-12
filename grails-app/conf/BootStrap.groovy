@@ -21,8 +21,8 @@ class BootStrap {
     		def arrozCholenco = new Recipe(
     			name:'arrozCholenco',
     			type:'food',
-    			serve:'1',
-    			occasion:'hollyweek',
+    			serve:1,
+    			occation:'hollyweek',
     			method:'1 cocer un caballo, etc...'
     			)
 

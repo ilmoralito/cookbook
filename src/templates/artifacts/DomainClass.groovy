@@ -2,7 +2,7 @@
 
 
 
-	Date dateCReated
+	Date dateCreated
 	Date lastUpdated
 
     static constraints = {
