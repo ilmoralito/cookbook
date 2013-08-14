@@ -12,4 +12,8 @@ class UserController {
     }
 
     def login(){}
+
+    def create(){
+    	[userInstance: new User(params)]
+    }
 }
