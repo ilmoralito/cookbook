@@ -14,7 +14,7 @@
     </div>
 
     <div class="form-group">
-      <g:link controller="login" action="edit" id="" title="${message(code:'org.inrma.edit')}"  class="tooledit">
+      <g:link controller="login" action="resetpassword">
           <g:message code="ni.com.cookbook.forgotpassword"/>
       </g:link>
     </div>

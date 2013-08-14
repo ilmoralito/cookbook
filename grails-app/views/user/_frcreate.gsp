@@ -39,7 +39,7 @@
     
     <g:submitButton name="btnregistration" value="${message(code:'ni.com.cookbook.btnregistration')}"class="btn btn-default"/>
     
-    <g:link controller="user" action="login" class="btn btn-info"> 
+    <g:link controller="user" action="login" class="btn btn-info loco"> 
       <g:message code="ni.com.cookbook.login"/>
     </g:link>   
 

@@ -8,5 +8,4 @@
 </head>
 <body>
 	<g:render template="frcreate"/>
-</body>
 </html>
