@@ -22,7 +22,7 @@
                   </g:link>
               </li>
               <li class="">
-                  <g:link controller="login" action="edit" id="" title="${message(code:'ni.com.cookbook.logout')}"  class="toollogout" data-placement="bottom"><span class="glyphicon glyphicon-off"></span>
+                  <g:link controller="user" action="logout" id="" title="${message(code:'ni.com.cookbook.logout')}"  class="toollogout" data-placement="bottom"><span class="glyphicon glyphicon-off"></span>
                   </g:link>
               </li>
               <li class="dropdown">

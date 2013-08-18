@@ -7,6 +7,9 @@
 	<r:require modules="bootstrap,application"/>
 </head>
 <body>
-	<g:render template="frlogin"/>
+	<g:form  controller= "user" action="authenticate" class="form-inline">
+		<g:render template="frlogin"/>
+	</g:form>
+	
 </body>
 </html>
