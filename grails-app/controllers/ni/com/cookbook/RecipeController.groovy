@@ -7,7 +7,7 @@ class RecipeController {
 		list:"GET"
 	]
 
-    def index() {
-    	
-    }
+    def index() {}
+
+    def list(){}
 }

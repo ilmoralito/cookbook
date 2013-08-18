@@ -9,7 +9,8 @@ class BootStrap {
     			email:'jose@gmail.com',
     			password:'1234',
     			fullName:'Jose Torrez',
-    			role:'admin'
+    			role:'admin',
+                enable:'true'
     			)
 
     		if(!jose.save()) {

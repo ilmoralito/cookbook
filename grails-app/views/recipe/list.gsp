@@ -3,13 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>login</title>
-	<meta name="layout" content="login">
+	<meta name="layout" content="list">
 	<r:require modules="bootstrap,application"/>
 </head>
 <body>
-	<g:form  controller= "user" action="authenticate" class="form-inline">
-		<g:render template="frlogin"/>
-	</g:form>
-	
+
+	lista de recetas	
 </body>
 </html>

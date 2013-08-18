@@ -4,13 +4,13 @@
     <legend><g:message code="ni.com.cookbook.login"/></legend>
     
     <div class="form-group">
-      <label for="exampleInputEmail"><g:message code="ni.com.cookbook.email"/></label>
-      <input type="text" class="form-control" id="exampleInputEmail" placeholder="${message(code:'ni.com.cookbook.email')}">
+      <label for="email"><g:message code="ni.com.cookbook.email"/></label>
+      <g:textField type="text" class="form-control" name="email" placeholder="${message(code:'ni.com.cookbook.email')}"/>
     </div>
 
     <div class="form-group">
       <label for="exampleInputPassword"><g:message code="ni.com.cookbook.password"/></label>
-      <input type="password" class="form-control" id="exampleInputPassword" placeholder="${message(code:'ni.com.cookbook.password')}">
+      <g:passwordField class="form-control" name="password" placeholder="${message(code:'ni.com.cookbook.password')}"/>
     </div>
 
     <div class="form-group">
@@ -19,10 +19,8 @@
       </g:link>
     </div>
 
-    <button type="submit" class="btn btn-default">
-        <g:message code="ni.com.cookbook.btnlogin"/>
-    </button>
-
+    <g:submitButton name="btnlogin" value="${message(code:'ni.com.cookbook.btnlogin')}"class="btn btn-default"/>
+    
     <g:link controller="user" action="create" class="btn btn-info"> 
       <g:message code="ni.com.cookbook.btnregistration"/>
     </g:link>  

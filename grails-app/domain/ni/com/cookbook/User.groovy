@@ -17,6 +17,10 @@ class User {
         role inList:["admin", "user", "collaborator"]
     }
 
+    def beforeInsert() {
+        password = password.encodeAsSHA1()
+    }
+
     static namedQueries = {
 
     }
