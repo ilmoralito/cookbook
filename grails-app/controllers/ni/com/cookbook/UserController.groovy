@@ -25,6 +25,7 @@ class UserController {
     def save(){
     	def userInstance = new User(params)
     	if (!userInstance.save()) {
+    		flash.message="errors"
     		render(view:"create", model:[userInstance:userInstance])
     		return false
     	}
@@ -47,13 +48,13 @@ class UserController {
 
     	switch(session.user) {
             case 'admin':
-                print "ENTRO admin"  
+                redirect(controller:"recipe", action:"list")  
                 break
             case 'client':
-                print "ENTRO cliente"
+               	redirect(controller:"recipe", action:"list") 
                 break
             case 'user':
-	            print "ENTRO cliente"
+	           	redirect(controller:"recipe", action:"list") 
 	            break
         }
 	}
