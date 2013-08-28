@@ -53,19 +53,16 @@ class RecipeController {
 
     	ingredients {
             on("addIngredient") {
-                def ingredient = new Ingredient(
-                    mAndQ:params.mAndQ,
-                    name:params.name
-                )
+                def ingredient = new Ingredient(params)
 
-                if (!ingredient.save()) {
+                if (!ingredient.validate(["mAndQ", "name"])) {
                     flow.ingredient = ingredient
                     return error()
                 }
 
-                print ingredient
-
                 flow.recipe.addToIngredients(ingredient)
+
+                [ingredients:flow.recipe.ingredients]
             }.to "ingredients"
 
             on("deleteRecipe"){

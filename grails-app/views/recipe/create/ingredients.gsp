@@ -7,19 +7,19 @@
 	<r:require modules="bootstrap,application"/>
 </head>
 <body>
-	<g:hasErrors bean="${recipe}">
-		<g:renderErrors bean="${recipe}"/>
+	<g:hasErrors bean="${ingredient}">
+		<g:renderErrors bean="${ingredient}"/>
 	</g:hasErrors>
 
 	<g:form>
 		<div class="form-group">
 			<label for="mAndQ">Media y cantidad</label>
-			<g:textField name="mAndQ" value="" class="form-control" autofocus="true"/>
+			<g:textField name="mAndQ" value="${ingredient?.mAndQ}" class="form-control" autofocus="true"/>
 		</div>
 
 		<div class="form-group">
 			<label for="name">Ingrediente</label>
-			<g:textField name="name" value="" class="form-control"/>
+			<g:textField name="name" value="${ingredient?.name}" class="form-control"/>
 		</div>
 
 		<g:submitButton name="addIngredient" value="Crear receta" class="btn btn-primary"/>
