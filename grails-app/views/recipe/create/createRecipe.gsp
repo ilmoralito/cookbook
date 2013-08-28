@@ -37,7 +37,7 @@
 			<g:textArea name="method" value="${recipe?.method}" class="form-control" style="resize:vertical;"/>
 		</div>
 
-		<g:submitButton name="create" value="Crear receta" class="btn btn-primary"/>
+		<g:submitButton name="create" value="Agregar ingredientes" class="btn btn-primary"/>
 	</g:form>
 </body>
 </html>
