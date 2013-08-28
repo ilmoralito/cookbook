@@ -10,16 +10,17 @@ class Recipe implements Serializable {
     String occation
     String method
     boolean enable
+
 	Date dateCreated
 	Date lastUpdated
 
     static constraints = {
         name blank:false, maxSize:70
-        type inList:["food", "drink", "dessert", "sweet"]
+        type inList:["Comida", "Bebida", "Postre", "Dulce"]
         image nullable:true, maxSize:250000
         vote min:0
         serve blank:false, min:1
-        occation inList:["hollyweek", "christmas", "dayDead"]
+        occation inList:["Semana Santa", "Navidad", "Dia de los muertos"], maxSize:255
         method nullable:true
     }
 
