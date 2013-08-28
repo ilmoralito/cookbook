@@ -37,6 +37,7 @@ class RecipeController {
     				type:params?.type,
     				serve:params.int("serve"),
     				occation:params?.occation,
+                    method:params?.method,
     				user:flow.user
     			)
 
