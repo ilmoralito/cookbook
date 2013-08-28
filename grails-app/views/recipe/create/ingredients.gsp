@@ -11,6 +11,8 @@
 		<g:renderErrors bean="${ingredient}"/>
 	</g:hasErrors>
 
+	<g:link event="deleteRecipe" class="pull-right">Borrar receta</g:link>
+
 	<g:form>
 		<div class="form-group">
 			<label for="mAndQ">Media y cantidad</label>
@@ -22,23 +24,26 @@
 			<g:textField name="name" value="${ingredient?.name}" class="form-control"/>
 		</div>
 
-		<g:submitButton name="addIngredient" value="Crear receta" class="btn btn-primary"/>
-		<g:submitButton name="deleteRecipe" value="Cancelar" class="btn btn-primary"/>
+		<g:submitButton name="addIngredient" value="Agregar ingrediente" class="btn btn-primary"/>
+		<g:submitButton name="done" value="Terminar" class="btn btn-primary"/>
 	</g:form>
 
 	<g:if test="${ingredients}">
+		<br>
 		<table class="table">
 			<thead>
-				<th>Medida</th>
-				<th>Ingrediente</th>
+				<th>Ingredientes</th>
 				<th></th>
 			</thead>
 			<tbody>
 				<g:each in="${ingredients}" var="ingredient">
 					<tr>
-						<td>${ingredient.mAndQ}</td>
-						<td>${ingredient.name}</td>
-						<td><g:link event="deleteIngredient" id="${ingredient.id}">Delete</g:link></td>
+						<td>${ingredient.mAndQ} de ${ingredient.name}</td>
+						<td style="width:1px;">
+							<g:link event="deleteIngredient" id="${ingredient.id}">
+								<span class="glyphicon glyphicon-trash"></span>
+							</g:link>
+						</td>
 					</tr>
 				</g:each>
 			</tbody>

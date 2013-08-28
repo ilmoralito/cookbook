@@ -68,6 +68,8 @@ class RecipeController {
             on("deleteRecipe"){
                 flow.recipe.delete()
             }.to "done"
+
+            on("done").to "done"
     	}
 
     	done {
