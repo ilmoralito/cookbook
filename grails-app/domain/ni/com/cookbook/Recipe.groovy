@@ -21,7 +21,7 @@ class Recipe implements Serializable {
         vote min:0
         serve blank:false, min:1
         occation inList:["Semana Santa", "Navidad", "Dia de los muertos"], maxSize:255
-        method nullable:true
+        method blank:false
     }
 
     static namedQueries = {
