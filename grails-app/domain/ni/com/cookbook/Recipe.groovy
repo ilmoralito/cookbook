@@ -42,6 +42,9 @@ class Recipe implements Serializable {
         name
     }
 
+    List alias
+    List ingredients
+
     static belongsTo = [user:User]
     static hasMany = [alias:String, ingredients:String]
 
